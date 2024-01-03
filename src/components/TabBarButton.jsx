@@ -1,4 +1,4 @@
-export default function TabBarButton({ children, onSelect, isSelect }) {
+export default function TabBarButton({ children, isSelect, ...props }) {
 
-    return (<button className={isSelect === true ? 'active' : undefined} onClick={onSelect}>{children}</button>);
+    return (<button className={isSelect === true ? 'active' : undefined} {...props}>{children}</button>);
 }
